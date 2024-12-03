@@ -1,0 +1,822 @@
+
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  padding: 10px 20px;
+  z-index: 1000;
+  font-family: Ruda;
+  box-shadow: 0px 2px 10px black;
+}
+
+.navbar-toggler-icon {
+  justify-content: flex-end;
+  margin-left: auto;
+
+}
+
+/* Logo */
+.container-fluid>.navbar-b {
+  font-family: Ruda;
+  font-size: 2.0rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 1);
+  margin-right: auto;
+}
+
+/* Navigation Menu */
+.navbar-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-nav .nav-link {
+  font-family: Ruda;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f9a825;
+  /* Highlight color on hover */
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons img {
+  width: 35px;
+  height: auto;
+}
+
+.main-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  /* Full viewport height */
+  background-image: url('https://s3-alpha-sig.figma.com/img/791f/9ca1/801cf713555ea70ba295e8de05e15650?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nlgKVHnE-0LF72G-5X-uaPbGS2-mzv2vdY5f-P9HUCizfTy6ipJVrqyRdQIsUGHVSoLWkv0O1ng8bJAhOcLm0LWYKb2Gb0iJ7IjBwQ4g5TdRFfxJ5UW7tPhLUje2r13b4OMva158GDBNxxP8PL2DgztXPrVMf5oP640YImwbiB6YKyBh6CRkAcJZC5~-pEevlAacqrnSVTnhDgFjozVoIQOW0-kX8KfoxS1ZLRNvvla4sQTS9TMZztiPwhZvp7OG3H~c3-kYR4Rrw41J7LSm7JhvruHQ9rqoj7v46ZUweick4SPFNQ6mg6HtuP61L51Y7Np3ViKcUYTxLzhvJBcJCA__');
+  background-size: cover;
+  /* Cover entire area */
+  background-position: center;
+  /* Center the image */
+  color: rgba(255, 255, 255, 1);
+  /* White text for contrast */
+  padding: 50px 20px;
+}
+
+.content {
+  display: flex;
+  max-width: 500px;
+  margin-top: 50px;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* Wrap content on smaller screens */
+  gap: 20px;
+  /* Space between elements */
+  text-align: left;
+}
+
+.main-banner h1 {
+  font-family: Quattrocento;
+  font-weight: bold;
+  font-size: 2.8rem;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.main-banner h1::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: rgba(242, 76, 76, 1);
+  margin: 10px auto 0 auto;
+}
+
+.main-banner p {
+  font-family: Ruda;
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+  text-align: center;
+}
+
+#about-us {
+  padding: 50px 20px;
+  text-align: center;
+  color: #333;
+  /* Dark text for readability */
+  background-color: rgba(0, 0, 0, 1);
+}
+
+#about-us h2 {
+  font-family: Quattrocento;
+  font-size: 2.8rem;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 30px;
+  position: relative;
+}
+
+#about-us h2::after {
+  content: '';
+  display: block;
+  width: 50vw;
+  height: 4px;
+  background: rgba(242, 76, 76, 1);
+  margin: 10px auto 0 auto;
+}
+
+.about-container {
+  display: flex;
+  width: 90vw;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* Wrap content on smaller screens */
+  gap: 20px;
+  /* Space between elements */
+}
+
+.about-text {
+  flex: 1;
+  /* Take up available space */
+  max-width: 500px;
+  color: rgba(255, 255, 255, 1);
+  font-family: Ruda;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.first-line-overline::first-line {
+  text-decoration: overline;
+  text-decoration-color: rgba(242, 76, 76, 1);
+}
+
+.about-image {
+  flex: 1;
+  /* Take up available space */
+  display: flex;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for the image */
+}
+
+/* Section Styles */
+#menu {
+  padding: 50px 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 1);
+  /* Black background */
+}
+
+#menu h2 {
+  font-size: 2.8rem;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 1);
+  font-family: Quattrocento;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+#menu h2::after {
+  content: '';
+  display: block;
+  width: 50vw;
+  height: 4px;
+  background: rgba(242, 76, 76, 1);
+  margin: 10px auto 0 auto;
+}
+
+.menu-p {
+  color: rgba(255, 255, 255, 1);
+  font-family: Ruda;
+  letter-spacing: 0.09em;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  width: 90vw;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Menu Grid Styles */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  border: 1px solid white;
+  background: rgba(0, 0, 0, 1);
+}
+
+/* Menu Item Styles */
+.menu-item {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 1);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styles */
+.menu-image {
+  flex-shrink: 0;
+  width: 120px;
+  margin-right: 20px;
+}
+
+.menu-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Styles */
+.menu-content h3 {
+  font-size: 1.5rem;
+  color: rgba(242, 201, 76, 1);
+  font-family: Ruda;
+  margin-bottom: 10px;
+}
+
+.menu-content p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 1);
+  font-family: Ruda;
+  line-height: 1.5;
+}
+
+/* General carousel container styling */
+.carousel-container {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 1);
+  /* Dark background */
+}
+
+/* Styling for the carousel heading */
+.carousel-container h2 {
+  font-family: Quattrocento;
+  font-size: 2.8rem;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.carousel-container h2::after {
+  content: '';
+  display: block;
+  width: 50vw;
+  height: 4px;
+  background: rgba(242, 76, 76, 1);
+  margin: 10px auto 0 auto;
+}
+
+/* Styling for the carousel images */
+.carousel-inner .carousel-item img {
+  text-align: left;
+  margin-bottom: 20px;
+  display: block;
+  /* Ensures the image is a block element */
+  width: 90vw;
+  /* Makes the image width 90% of the viewport */
+  margin: auto;
+  /* Centers the image horizontally */
+  padding: 50px;
+  object-fit: cover;
+  /* Ensures image covers the space, maintaining aspect ratio */
+}
+
+/* Optional: Customize carousel control buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  position: absolute;
+}
+
+
+/* styles.css */
+/* General Styling for the Section */
+.gallery-section {
+  padding: 50px 20px;
+  background-color: rgba(0, 0, 0, 1);
+  text-align: center;
+}
+
+/* Title Styling */
+.gallery-section h2 {
+  font-size: 2.8rem;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 1);
+  font-family: Quattrocento;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.gallery-section h2::after {
+  content: '';
+  display: block;
+  width: 50vw;
+  height: 4px;
+  background: rgba(242, 76, 76, 1);
+  margin: 10px auto 0 auto;
+}
+
+.gallery-section>div {
+  margin-bottom: 20px;
+  display: flex;
+  width: 90vw;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.gallery-section img:hover {
+  transform: scale(1.05);
+}
+
+#find-us-section {
+  background-color: rgba(0, 0, 0, 1);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#find-us-section h2 {
+  font-size: 2.8rem;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 1);
+  font-family: Quattrocento;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+#find-us-section h2::after {
+  content: '';
+  display: block;
+  width: 50vw;
+  height: 4px;
+  background: rgba(242, 76, 76, 1);
+  margin: 10px auto 0 auto;
+}
+
+.find-us-content {
+  display: flex;
+  width: 90vw;
+  margin: auto;
+  font-family: Ruda;
+  margin-top: 50px;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* Wrap content on smaller screens */
+  gap: 20px;
+  /* Space between elements */
+}
+
+.contact-info {
+  flex: 1;
+  /* Take up available space */
+  max-width: 500px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.contact-info p {
+  flex: 1;
+  /* Take up available space */
+  max-width: 500px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.location,
+.phone {
+  display: flex;
+  /* Align icon and text horizontally */
+  align-items: center;
+  /* Vertically align content */
+  margin-bottom: 15px;
+  /* Add spacing between location and phone */
+  font-size: 20px;
+  /* Icon size */
+  margin-right: 10px;
+  /* Spacing between icon and text */
+
+}
+
+.phone span,
+.location span {
+  font-size: 16px;
+  /* Adjust font size */
+  line-height: 1.5;
+  /* Add line height for better spacing */
+
+}
+
+.phone i {
+  transform: rotate(90deg);
+}
+
+.map {
+  flex: 1;
+  max-width: 700px;
+}
+
+.map img {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  flex: 1;
+  max-width: 700px;
+}
+
+
+footer {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 1);
+  font-family: Ruda;
+  /* White text */
+  padding: 20px 50px;
+  /* Padding around the footer */
+  display: flex;
+  align-items: right;
+  /* Center vertically */
+  margin-top: auto;
+  font-size: 1rem;
+  /* Adjust text size */
+  line-height: 1.5;
+  /* Space out text a bit */
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-container {
+  grid-template-columns: 1fr;
+  /* One columns */
+  gap: 30px;
+  /* Space between the two items */
+  width: 90vw;
+  /* Take up full width */
+  align-items: center;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* Align icon and text to the left */
+  gap: 12px;
+  /* Space between icon and text */
+  margin-right: 10px;
+  /* Spacing between icon and text */
+  margin: auto;
+}
+
+.footer-item span {
+  font-size: 1rem;
+  /* Adjust text size */
+  line-height: 1.5;
+  /* Space out text a bit */
+  font-family: Ruda;
+  align-items: center;
+}
+
+.footer .restaurant-logo {
+  display: flex;
+  text-align: center;
+  border: 2px solid #333;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-logo .icon {
+  display: flex;
+  font-size: 50px;
+  margin-bottom: 10px;
+  justify-content: left;
+  align-items: center;
+}
+
+
+
+/* Media Query for Mobile Screens */
+@media screen and (max-width: 768px) {
+
+  /* Header Adjustments */
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+
+
+  .social-icons {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  /* Main Banner Adjustments */
+  .main-banner {
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    /* Full viewport height */
+    background-image: url('https://s3-alpha-sig.figma.com/img/791f/9ca1/801cf713555ea70ba295e8de05e15650?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nlgKVHnE-0LF72G-5X-uaPbGS2-mzv2vdY5f-P9HUCizfTy6ipJVrqyRdQIsUGHVSoLWkv0O1ng8bJAhOcLm0LWYKb2Gb0iJ7IjBwQ4g5TdRFfxJ5UW7tPhLUje2r13b4OMva158GDBNxxP8PL2DgztXPrVMf5oP640YImwbiB6YKyBh6CRkAcJZC5~-pEevlAacqrnSVTnhDgFjozVoIQOW0-kX8KfoxS1ZLRNvvla4sQTS9TMZztiPwhZvp7OG3H~c3-kYR4Rrw41J7LSm7JhvruHQ9rqoj7v46ZUweick4SPFNQ6mg6HtuP61L51Y7Np3ViKcUYTxLzhvJBcJCA__');
+    background-size: cover;
+    /* Cover entire area */
+    background-position: center;
+    /* Center the image */
+  }
+
+
+  .main-banner .content {
+    max-width: 90%;
+    width: auto;
+  }
+
+
+
+  .main-banner p {
+    margin: 0px;
+    text-align: center;
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+
+
+  /* About Section */
+
+  .about-container {
+    flex-direction: column;
+    gap: 20px;
+
+  }
+
+  .about-text {
+    margin: 0px;
+    text-align: center;
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .about-image img {
+    max-width: 80%;
+    margin: auto;
+  }
+
+
+  /* Menu Section */
+  .menu-grid {
+    grid-template-columns: 1fr;
+    /* Single column on mobile */
+    gap: 15px;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu-image {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+
+  .menu-p {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu-content p {
+    font-size: 0.9rem;
+  }
+
+  .carousel-inner {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .carousel-inner .carousel-item img {
+    width: 100%;
+    /* Full width on mobile */
+    height: auto;
+    padding: 10rem;
+  }
+
+  .gallery-section>div {
+    flex-direction: column;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    /* Single column on mobile */
+
+  }
+
+  .gallery-section img {
+    max-width: 90%;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .find-us-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .find-us-content p {
+    text-align: center;
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .map img {
+    max-width: 90%;
+    height: 100%;
+    margin: 20px auto;
+    display: block;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+  /* Header Adjustments */
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .about-container {
+    flex-direction: row;
+    /* Text on the left, image on the right */
+    justify-content: space-between;
+    /* Ensure proper spacing */
+    align-items: center;
+    /* Vertically center the elements */
+    width: 90vw;
+    padding: 20px;
+    gap: 20px;
+    /* Space between the text and image */
+  }
+
+  .about-text {
+    flex: 1;
+    /* Allow the text to take up available space */
+    max-width: 50%;
+    /* Limit the width to 50% of the container */
+    font-size: 1rem;
+    /* Adjusted font size for medium screens */
+    text-align: left;
+    /* Ensure text is aligned to the left */
+  }
+
+  .about-image {
+    flex: 1;
+    /* Allow the image to take up available space */
+    max-width: 45%;
+    /* Limit the width slightly smaller than text */
+    display: flex;
+    justify-content: center;
+    /* Center the image horizontally */
+  }
+
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for the image */
+  }
+
+  .find-us-content {
+    margin-top: 0%;
+  }
+
+  .contact-info {
+    flex: 1;
+    /* Allow the text to take up available space */
+    max-width: 50%;
+    /* Limit the width to 50% of the container */
+    font-size: 1rem;
+    /* Adjusted font size for medium screens */
+    text-align: left;
+    margin-top: 5%;
+
+  }
+  .map {
+    flex: 1;
+    /* Allow the image to take up available space */
+    max-width: 45%;
+    /* Limit the width slightly smaller than text */
+    display: flex;
+    justify-content: center;
+    /* Center the map horizontally */
+  }
+  .map img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+}
+
+/* Media Query for Laptop and Larger Devices (Min width: 1024px) */
+@media screen and (min-width: 1024px) {
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .contact-info {
+    flex: 1;
+    max-width: 45%;
+    padding-right: 20px;
+    text-align: left;
+  }
+
+  .map {
+    flex: 1;
+    max-width: 45%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .map img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+}
